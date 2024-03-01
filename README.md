@@ -63,3 +63,6 @@
     When the basket is created
     Then total count of each product is calculated
 
+### To check test reports 
+
+`allure serve allure-results ` 
