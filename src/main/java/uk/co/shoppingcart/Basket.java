@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class Basket {
 
-    private List<String> basketItems = new ArrayList<>();
+    private final List<String> basketItems = new ArrayList<>();
 
     private final Map<String, Integer> productCount = new HashMap<>();
 

@@ -101,5 +101,4 @@ public class BasketPriceTest {
         assertEquals(totalPrice, totalBasketPrice, 0.0); //junit
         assertThat(totalBasketPrice).isEqualTo(totalPrice); //assertJ
     }
-
 }

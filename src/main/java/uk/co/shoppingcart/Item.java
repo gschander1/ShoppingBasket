@@ -5,9 +5,6 @@ import java.util.Map;
 
 public class Item {
 
-    private String item;
-    private Double price;
-
     private Double getPriceList(String productName) {
         Map<String, Double> itemPrice = new HashMap<>();
         // Initialize prices
@@ -16,7 +13,7 @@ public class Item {
         itemPrice.put("Melon", 50.00);
         itemPrice.put("Lime", 15.00);
 
-        return itemPrice.getOrDefault(productName, 30.0);
+        return itemPrice.get(productName);
     }
 
     public Double getItemPrice(String productName) {

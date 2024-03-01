@@ -32,9 +32,9 @@ public class ItemProductCountTest {
         totalProductCount = basket.countEachProductInBasket(basket.getProductsInBasket());
     }
 
-    @Then("total unique count occurs for each product")
-    public void total_unique_count_occurs_for_each_product() {
-        assertThat(totalProductCount).hasSize(4); //assertj
+    @Then("total count of each product is calculated")
+    public void total_count_of_each_product_is_calculated() {
+        assertThat(totalProductCount).hasSize(4);
         assertThat(totalProductCount).extracting("Apple").isEqualTo(4);
         assertThat(totalProductCount).extracting("Lime").isEqualTo(2);
         assertThat(totalProductCount).extracting("Melon").isEqualTo(1);
